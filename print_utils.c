@@ -3,10 +3,11 @@
 #include <string.h>
 #include "print_utils.h"
 
-void promptOut()
+void prompt(char *buffer)
 {
     fprintf(stdout, "\e[1m\033[36mmyShell\033[0m");
     fprintf(stdout, "$ \e[m");
+    fgets(buffer, 255, stdin);
 }
 
 void showInfo()

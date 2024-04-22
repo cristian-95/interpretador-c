@@ -3,7 +3,7 @@
 #ifndef print_utils_H
 #define print_utils_H
 
-void promptOut();
+void prompt(char *buffer);
 void showInfo();
 
 #endif

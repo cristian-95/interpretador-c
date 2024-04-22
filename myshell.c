@@ -16,11 +16,14 @@ int main(int argc, char *argv[])
   char buffer[255];
   while (1)
   {
-    promptOut();
-    fgets(buffer, 255, stdin);    
+    prompt(buffer);
     if (strncmp(buffer, "exit", 4) == 0)
     {
       exit(0);
+    }
+    else
+    {
+      system(buffer);
     }
   };
 
