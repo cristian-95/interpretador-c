@@ -1,21 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "print_utils.h"
 
-void promptOut(char *text)
+void promptOut()
 {
-    if (strlen(text) == 0)
-    {
-        fprintf(stdout, "\033[32mmyShell");
-        fprintf(stdout, "\033[0m(em obras)🚧 "); // Lembrar de trocar simbolo
-    }
-    else
-    {        
-        fprintf(stdout, "\n\033[0m%s", text);
-    }
+    fprintf(stdout, "\e[1m\033[36mmyShell\033[0m");
+    fprintf(stdout, "$ \e[m");
 }
 
 void showInfo()
 {
-    fprintf(stderr, "MyShell 0.0.0\n");
+    fprintf(stderr, "MyShell 0.2.0\n\n");
 }
