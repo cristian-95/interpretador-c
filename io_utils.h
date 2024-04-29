@@ -17,7 +17,9 @@
 // e recebe o comando no stdin.
 void prompt(char *buffer);
 
+// Exibe mensagem de erro ao usuário.
 void print_error(char *message);
 
-int run(char *command);
+// Exibe informações úteis sobre o programa.
+void info();
 #endif

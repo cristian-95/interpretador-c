@@ -12,7 +12,7 @@ void prompt(char *buffer)
 
 void print_error(char *message)
 {
-    fprintf(stderr, RED "ERRO: %s\n" RESET, message);
+    fprintf(stderr, RED BOLD "ERRO: " REGULAR RED "%s\n" RESET, message);
 }
 
 void info()
@@ -23,6 +23,6 @@ void info()
             "|     | | |__   |   | -_| | |\n"
             "|_|_|_|_  |_____|_|_|___|_|_|\n"
             "      |___|\n"
-            "(version 0.2.0) "
+            "(version 0.6.0) "
             "Digite exit para sair.\n");
 }

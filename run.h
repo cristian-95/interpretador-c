@@ -6,8 +6,8 @@
 // Cria um novo processo e executa o comando.
 int create_new_process(char *program);
 
-// Exibe informações úteis sobre o programa.
-void info();
+// Cria um novo processo para executar o comando passado.
+int run(char *command);
 
 #endif
 

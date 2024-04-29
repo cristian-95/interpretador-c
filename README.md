@@ -19,7 +19,7 @@ programa chamado
 
 - [X] Após execução de um programa ou comando (exceto exit), a shell deve mostrar o prompt novamente e aguardar nova entrada
 
-- [ ] Cuide para que a shell não deixe processos filhos bloqueados indefinidamente ou zumbis
+- [X] Cuide para que a shell não deixe processos filhos bloqueados indefinidamente ou zumbis
 
 - [X] A chamada system não deve ser usada, pois depende de uma shell e não queremos construir uma shell que dependa de outra
 
