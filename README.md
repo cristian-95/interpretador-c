@@ -8,7 +8,7 @@
 
 - [X] 2. O comando exit deve sair do processador de comandos
    
-- [ ] 3. Quando a entrada é o nome de um programa no path ou o caminho de um programa, o mesmo deve ser executado
+- [x] 3. Quando a entrada é o nome de um programa no path ou o caminho de um programa, o mesmo deve ser executado
 
 - [ ] 4. Quando a entrada não é um programa no path ou caminho válido, deve ser mostrada uma mensagem de erro adequada
 
@@ -21,7 +21,7 @@ programa chamado
 
 - [ ] Cuide para que a shell não deixe processos filhos bloqueados indefinidamente ou zumbis
 
-- [ ] A chamada system não deve ser usada, pois depende de uma shell e não queremos construir uma shell que dependa de outra
+- [X] A chamada system não deve ser usada, pois depende de uma shell e não queremos construir uma shell que dependa de outra
 
 ### Algumas funções que poderão ser úteis:
 
