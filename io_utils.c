@@ -5,9 +5,14 @@
 
 void prompt(char *buffer)
 {
-    fprintf(stdout, "\e[1m\033[36mmyShell\033[0m");
+    fprintf(stdout, CYAN BOLD "\e[1m\033[36mmyShell\033[0m" REGULAR RESET);
     fprintf(stdout, "$ \e[m");
     fgets(buffer, 255, stdin);
+}
+
+void print_error(char *message)
+{
+    fprintf(stderr, RED "ERRO: %s\n" RESET, message);
 }
 
 void info()

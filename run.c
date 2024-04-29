@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <pthread.h>
 #include "run.h"
+#include "io_utils.h"
 
 int create_new_process(char *program)
 {
@@ -13,24 +14,25 @@ int create_new_process(char *program)
 
 int run(char *command)
 {
-    pid_t status;
+    pid_t child_pid;
     pid_t wait_result;
     int stat_loc;
 
     char *args[] = {command, NULL};
 
-    status = fork();
-    if (status == 0)
+    child_pid = fork();
+    if (child_pid == 0)
     {
-        printf("\nrunning: '%s'\n", command);
-        printf("[%d]\n", status);
-        execvp(command, args);
-        // fprintf(stderr, "Deu erro aqui bro\n");
-        // abort();
+        if (execvp(command, args) < 0)
+        {
+            print_error("comando não encontrado.");
+            exit(EXIT_FAILURE);
+        }
     }
     else
     {
-        wait_result = waitpid(status, &stat_loc, WUNTRACED);
-        return status;
+        wait_result = waitpid(child_pid, &stat_loc, WUNTRACED);
+        return child_pid;
     }
+    return 0;
 }
