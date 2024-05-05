@@ -10,9 +10,9 @@
    
 - [x] 3. Quando a entrada é o nome de um programa no path ou o caminho de um programa, o mesmo deve ser executado
 
-- [ ] 4. Quando a entrada não é um programa no path ou caminho válido, deve ser mostrada uma mensagem de erro adequada
+- [X] 4. Quando a entrada não é um programa no path ou caminho válido, deve ser mostrada uma mensagem de erro adequada
 
-- [ ] 5. Os argumentos digitados na linha de comando devem ser passados ao
+- [X] 5. Os argumentos digitados na linha de comando devem ser passados ao
 programa chamado
 
 ## Requisitos essenciais:
